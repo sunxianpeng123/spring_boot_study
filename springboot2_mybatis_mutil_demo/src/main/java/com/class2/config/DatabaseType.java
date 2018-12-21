@@ -5,6 +5,7 @@ package com.class2.config;
  * 创建数据源类型的枚举DatabaseType该枚举类主要用来区分读写
  */
 public enum DatabaseType {
+    //1
     master("writer"),slave("read");
 
     DatabaseType(String name) {

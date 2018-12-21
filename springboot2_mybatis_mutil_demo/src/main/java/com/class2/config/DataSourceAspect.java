@@ -28,10 +28,11 @@ public class DataSourceAspect {
     /**
      * 配置AOP
      * 本章的开头已经说过，多数据源动态切换的原理是利用AOP切面进行动态的切换的，当调用dao接口方法时，根据接口方法的方法名开头进行区分读写。
+     * 所以大家的方法名开头都需要按照规范进行编写，如：get***、add*** 等等，
      */
-
+    //5
     private static Logger logger = LoggerFactory.getLogger(DataSourceAspect.class);
-    @Pointcut("execution(* com.winterchen.dao.*.*(..))")//切点
+    @Pointcut("execution(* com.class2.dao.*.*(..))")//切点
     public void aspect() {
 
     }

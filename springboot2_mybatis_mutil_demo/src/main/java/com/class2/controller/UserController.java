@@ -25,7 +25,7 @@ public class UserController {
     @ResponseBody
     @PostMapping("/add")
     public int addUser(UserDomain user){
-//        http://localhost:8080/user/add?userName=测试mybatisAF&password=123456&phone=18516356051
+//        http://localhost:8080/user/add?userName=测试mutil&password=123456&phone=18516356051
 
         return userService.addUser(user);
     }
@@ -41,5 +41,6 @@ public class UserController {
 //        http://localhost:8080/user/all?pageNum=5&pageSize=12
         return  userService.findAllUser(pageNum,pageSize);
     }
+
 
 }

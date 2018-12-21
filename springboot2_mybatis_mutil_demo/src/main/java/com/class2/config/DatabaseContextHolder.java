@@ -17,6 +17,7 @@ public class DatabaseContextHolder {
      *     多数据源必须要保证数据源的线程安全的
      */
 
+    //2
     private static final ThreadLocal<DatabaseType> contextHolder=new ThreadLocal<>();//用于存放多线程环境下的成员变量
 
     public static void setDatabaseType(DatabaseType type) {

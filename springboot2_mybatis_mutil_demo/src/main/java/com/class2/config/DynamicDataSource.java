@@ -23,7 +23,9 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
      * 其实该相当于数据源DataSource的路由中介，可以实现在项目运行时根据相应key值切换到对应的数据源
      * DataSource上，有兴趣的同学可以看看它的源码。
      */
+    //3
     static final Map<DatabaseType,List<String>> METHOD_TYPE_MAP=new HashMap<>();
+
     @Nullable
     @Override
     protected  Object determineCurrentLookupKey(){

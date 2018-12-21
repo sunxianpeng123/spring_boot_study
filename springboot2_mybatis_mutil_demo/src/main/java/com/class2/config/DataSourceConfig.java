@@ -43,6 +43,7 @@ public class DataSourceConfig {
      * (2) DataSourceProperties和（4）中的 @ConfigurationProperties(prefix = "spring.datasource.master")配合使用，将配置文件中的配置数据自动封装到实体类DataSourceProperties中
      * (3) @Value注解同样是指定获取配置文件中的配置
      */
+    //4
     private  static Logger logger = LoggerFactory.getLogger(DataSourceConfig.class);
     @Autowired
     private Environment env; // (1)
