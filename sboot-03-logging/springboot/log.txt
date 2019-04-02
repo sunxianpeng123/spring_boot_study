@@ -1,0 +1,23 @@
+2019-03-29 17:16:04.881  INFO 9188 --- [main] c.x.sboot03.Sboot03LoggingApplication    : Starting Sboot03LoggingApplication on Dell-PC with PID 9188 (F:\JavaProjects\spring_boot_study\sboot-03-logging\target\classes started by Dell in F:\JavaProjects\spring_boot_study\sboot-03-logging)
+2019-03-29 17:16:04.883 DEBUG 9188 --- [main] c.x.sboot03.Sboot03LoggingApplication    : Running with Spring Boot v1.5.19.RELEASE, Spring v4.3.22.RELEASE
+2019-03-29 17:16:04.883  INFO 9188 --- [main] c.x.sboot03.Sboot03LoggingApplication    : No active profile set, falling back to default profiles: default
+2019-03-29 17:16:04.932  INFO 9188 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fad8c79: startup date [Fri Mar 29 17:16:04 CST 2019]; root of context hierarchy
+2019-03-29 17:16:05.602  INFO 9188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-03-29 17:16:05.619  INFO 9188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-29 17:16:05.619  INFO 9188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.37
+2019-03-29 17:16:05.705  INFO 9188 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-29 17:16:05.706  INFO 9188 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 777 ms
+2019-03-29 17:16:05.794  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-03-29 17:16:05.796  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-29 17:16:05.796  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-29 17:16:05.796  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-29 17:16:05.797  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-29 17:16:05.963  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7fad8c79: startup date [Fri Mar 29 17:16:04 CST 2019]; root of context hierarchy
+2019-03-29 17:16:05.997  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-29 17:16:05.998  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-29 17:16:06.016  INFO 9188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-29 17:16:06.017  INFO 9188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-29 17:16:06.037  INFO 9188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-29 17:16:06.119  INFO 9188 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-29 17:16:06.143  INFO 9188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-03-29 17:16:06.146  INFO 9188 --- [main] c.x.sboot03.Sboot03LoggingApplication    : Started Sboot03LoggingApplication in 1.452 seconds (JVM running for 2.043)
