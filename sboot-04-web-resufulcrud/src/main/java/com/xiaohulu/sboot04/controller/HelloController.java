@@ -25,6 +25,9 @@ public class HelloController {
     public  String hello(){
         return "Hello World!";
     }
+
+
+
 //    http://localhost:8080/success
 //    查出一些数据在页面展示
     @RequestMapping("/success")
@@ -34,4 +37,13 @@ public class HelloController {
         map.put("users", Arrays.asList("zhangsan","lisi","wangwu"));
         return "success";//返回的success字符串需要和templates/success.html的前缀一样
     }
+
+
+//    http://localhost:8080
+//    访问项目路径或者项目下的index.html都是去templates下去寻找
+//    或者添加视图映射 直接跳转到想要的页面
+//    @RequestMapping({"/","/index.html"})
+//    public String  index(){
+//        return  "index";
+//    }
 }
