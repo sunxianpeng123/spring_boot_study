@@ -1,7 +1,0 @@
-2019-02-14 14:30:36.045 DEBUG 8008 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-02-14 14:30:36.054  INFO 8008 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1063 ms
-2019-02-14 14:30:36.135 DEBUG 8008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2019-02-14 14:30:36.219 DEBUG 8008 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-02-14 14:30:36.270 DEBUG 8008 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2019-02-14 14:30:36.278 DEBUG 8008 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-02-14 14:30:36.285 DEBUG 8008 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice

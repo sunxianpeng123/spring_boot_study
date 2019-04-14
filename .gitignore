@@ -3,3 +3,4 @@ sboot_01_helloworld/.idea/
 sboot-02-config/.mvn/
 chapter1/.idea/
 chapter1/target/
+sboot-03-logging/logs/

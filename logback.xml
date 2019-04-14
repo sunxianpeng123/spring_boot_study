@@ -9,7 +9,7 @@
     <!-- 控制台打印 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder charset="utf-8">
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+            <pattern>[%-5level]--->---> %d{${DATETIME}} [%thread] %logger{36} - %m%n
             </pattern>
         </encoder>
     </appender>
