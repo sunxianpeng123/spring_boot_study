@@ -6,10 +6,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * \* Created with IntelliJ IDEA.
@@ -22,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 
-@Api(description="雪狐数据统计")
+@Api(description="雪狐数据统计,自实验")
 public class XuehuStatisController {
 
     @ApiOperation(value="获取平台分类统计数据", notes="根据传递平台和月份获取统计数")
@@ -33,16 +30,23 @@ public class XuehuStatisController {
             @ApiParam(value = "month,格式 2018-01 形式", required = true)
             @RequestParam(value = "month", required = true) String month
     ){
-        Boolean result =false;
-        System.out.println(result);
         Log.info("getStatisticsByPlatAndMonth for plat" +  platID  +  " month: " + month +   "  begin");
-        return result;
+
+        return true;
     }
 
-
+    /**
+     * 测试相关功能
+     * @return
+     */
     @RequestMapping("/test")
     public  String  test(){
         return  "XuehuStatisController RestController";
     }
-
+//    http://localhost:8080/users/fpc
+    @RequestMapping("/users/{username}")
+    public String userProfile(@PathVariable String username){
+//        return String.format("user %s", username);
+        return "user PathVariable   " + username;
+    }
 }
