@@ -1,5 +1,8 @@
 package com.xiaohulu.sboot01.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@ResponseBody//这个类的所有方法返回的数据直接写给浏览器
 @RestController//可以代替@Controller和@ResponseBody
 public class HelloController {
+    private Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     //@ResponseBody
     @RequestMapping("/hello")
@@ -23,5 +27,11 @@ public class HelloController {
         return "hello world quick!";
     }
 //    restApi
+
+    @GetMapping("/docker")
+    public String hellDocker(){
+        logger.info("docker hello world !!!");
+        return  "Hello World !!!";
+    }
 
 }

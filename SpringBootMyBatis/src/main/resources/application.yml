@@ -1,0 +1,18 @@
+# DATASOURCE
+jdbc:
+    dataSourceClassName: com.mysql.jdbc.jdbc2.optional.MysqlDataSource
+    url: jdbc:mysql://192.168.120.158:3306/
+    databaseName: live_platform
+    serverName: 192.168.120.158
+    username: root
+    password: 1qaz@WSX3edc
+    cachePrepStmts: true
+    prepStmtsSize: 250
+    prepStmtsCacheSqlLimit: 2048
+    userServerPrepStmts: true
+
+# MyBatis
+mybatis:
+        typeAliasesPackage: com.example.*.dao
+        mapperLocations: classpath:/mappers/*.xml
+        configLocation: classpath:/mybatis-config.xml
