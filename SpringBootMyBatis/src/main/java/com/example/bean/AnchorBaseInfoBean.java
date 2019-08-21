@@ -1,5 +1,7 @@
 package com.example.bean;
 
+import java.io.Serializable;
+
 /**
  * \* Created with IntelliJ IDEA.
  * \* User: sunxianpeng
@@ -9,7 +11,7 @@ package com.example.bean;
  * \* Description:
  * \
  */
-public class AnchorBaseInfoBean {
+public class AnchorBaseInfoBean implements Serializable {
     private int platform_id;
     private String room_id;
     private  String sex;

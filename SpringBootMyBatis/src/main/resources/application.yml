@@ -16,3 +16,17 @@ mybatis:
         typeAliasesPackage: com.example.*.dao
         mapperLocations: classpath:/mappers/*.xml
         configLocation: classpath:/mybatis-config.xml
+
+#redis
+spring:
+  redis:
+    database: 15
+    host: 113.107.166.14
+    port: 19379
+    password:
+    pool:
+      max-active: 8
+      max-idle: 8
+      min-idle: 0
+      max-wait: -1
+    timeout: 10000
